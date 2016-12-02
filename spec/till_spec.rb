@@ -12,8 +12,8 @@ describe Till do
     expect(till.shop_details).to eq(shop_details)
   end
   describe '#product()' do
-    it 'returns a product' do
-      expect(till.product("Single Espresso")).to eq(2.05)      
+    it 'search for product price by name' do
+      expect(till.product("Single Espresso")).to eq(2.05)
     end
   end
 end
